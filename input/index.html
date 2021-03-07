@@ -1,0 +1,47 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="rustdoc" name="generator"><meta content="Provides `input!` macro." name="description"><meta content="rust, rustlang, rust-lang, input" name="keywords"><title>input - Rust</title><link href="../normalize.css" rel="stylesheet" type="text/css"><link href="../rustdoc.css" id="mainThemeStyle" rel="stylesheet" type="text/css"><link href="../light.css" id="themeStyle" rel="stylesheet" type="text/css"><link disabled="" href="../dark.css" rel="stylesheet" type="text/css"><link disabled="" href="../ayu.css" rel="stylesheet" type="text/css"><script id="default-settings"></script><script src="../storage.js"></script><script src="../crates.js"></script><noscript><link rel="stylesheet" href="../noscript.css"></noscript><link href="../favicon.svg" rel="icon" type="image/svg+xml">
+<link href="../favicon-16x16.png" rel="alternate icon" type="image/png">
+<link href="../favicon-32x32.png" rel="alternate icon" type="image/png"><style type="text/css">#crate-search{background-image:url("../down-arrow.svg");}</style></head><body class="rustdoc mod"><!--[if lte IE 8]><div class="warning">This old browser is unsupported and will most likely display funky things.</div><![endif]--><nav class="sidebar"><div class="sidebar-menu" role="button">☰</div><a href="../input/index.html"><div class="logo-container rust-logo"><img alt="logo" src="../rust-logo.png"></div></a><p class="location">Crate input</p><div class="block version"><p>Version 0.0.0</p></div><div class="sidebar-elems"><a href="all.html" id="all-types"><p>See all input's items</p></a><div class="block items"><ul><li><a href="#macros">Macros</a></li><li><a href="#enums">Enums</a></li><li><a href="#traits">Traits</a></li><li><a href="#functions">Functions</a></li></ul></div><p class="location"></p><div data-name="input" data-relpath="../" data-ty="mod" id="sidebar-vars"></div></div></nav><div class="theme-picker"><button aria-haspopup="menu" aria-label="Pick another theme!" id="theme-picker"><img alt="Pick another theme!" height="18" src="../brush.svg" width="18"></button><div id="theme-choices" role="menu"></div></div><script src="../theme.js"></script><nav class="sub"><form class="search-form"><div class="search-container"><div><select id="crate-search"><option value="All crates">All crates</option></select><input autocomplete="off" class="search-input" disabled="" name="search" placeholder="Click or press ‘S’ to search, ‘?’ for more options…" spellcheck="false" type="search"></div><button class="help-button" type="button">?</button>
+                <a href="../settings.html" id="settings-menu"><img alt="Change settings" height="18" src="../wheel.svg" width="18"></a></div></form></nav><section class="content" id="main"><h1 class="fqn">
+      <span class="in-band">Package qryxip-competitive-input v0.0.0</span>
+    </h1><div class="docblock">
+      <p><img alt="✔" height="20" src="https://github.githubassets.com/images/icons/emoji/unicode/2714.png" title="✔" width="20"> This library is verified with 5 solutions</p>
+      <ul>
+        <li>Manifest: <a href="https://github.com/qryxip/competitive-programming-library/blob/95d0fe89f04708e95a5fc4689cebc92879fc62b4/crates/io/input/Cargo.toml"><code>crates/io/input/Cargo.toml</code></a></li>
+        <li>License: <code>CC0-1.0</code></li>
+      </ul>
+      <h1 class="section-header" id="code-size"><a href="#code-size">Code size</a></h1>
+<ul>
+  <li>unmodified: 5.5 KiB + (not yet implemented) KiB</li>
+</ul>
+
+      <h1 class="section-header" id="verified-with"><a href="#verified-with">Verified with</a></h1>
+      <ul><li><a href="https://atcoder.jp/contests/abc162/tasks/abc162_c">https://atcoder.jp/contests/abc162/tasks/abc162_c</a> (<a href="https://github.com/qryxip/competitive-programming-library/blob/95d0fe89f04708e95a5fc4689cebc92879fc62b4/verification/atcoder/src/bin/abc162-c.rs">code</a>)</li><li><a href="https://atcoder.jp/contests/abc174/tasks/abc174_e">https://atcoder.jp/contests/abc174/tasks/abc174_e</a> (<a href="https://github.com/qryxip/competitive-programming-library/blob/95d0fe89f04708e95a5fc4689cebc92879fc62b4/verification/atcoder/src/bin/abc174-e.rs">code</a>)</li><li><a href="https://judge.yosupo.jp/problem/montmort_number_mod">https://judge.yosupo.jp/problem/montmort_number_mod</a> (<a href="https://github.com/qryxip/competitive-programming-library/blob/95d0fe89f04708e95a5fc4689cebc92879fc62b4/verification/library-checker/src/bin/montmort-number-mod.rs">code</a>)</li><li><a href="https://judge.yosupo.jp/problem/sqrt_mod">https://judge.yosupo.jp/problem/sqrt_mod</a> (<a href="https://github.com/qryxip/competitive-programming-library/blob/95d0fe89f04708e95a5fc4689cebc92879fc62b4/verification/library-checker/src/bin/sqrt-mod.rs">code</a>)</li><li><a href="https://yukicoder.me/problems/no/723">https://yukicoder.me/problems/no/723</a> (<a href="https://github.com/qryxip/competitive-programming-library/blob/95d0fe89f04708e95a5fc4689cebc92879fc62b4/verification/yukicoder/src/bin/723.rs">code</a>)</li></ul>
+    </div><hr><h1 class="fqn"><span class="in-band">Crate <a class="mod" href="">input</a></span><span class="out-of-band"><span id="render-detail"><a href="javascript:void(0)" id="toggle-all-docs" title="collapse all docs">[<span class="inner">−</span>]</a></span><a class="srclink" href="../src/input/lib.rs.html#1-216" title="goto source code">[src]</a></span></h1><div class="docblock"><p>Provides <code>input!</code> macro.</p>
+<h1 class="section-header" id="example"><a href="#example">Example</a></h1>
+<div class="example-wrap"><pre class="rust rust-example-rendered"><span class="attribute">#[<span class="ident">macro_use</span>]</span>
+<span class="kw">extern</span> <span class="kw">crate</span> <span class="ident">input</span> <span class="kw">as</span> <span class="kw">_</span>;
+
+<span class="kw">use</span> <span class="ident">input</span>::<span class="ident">Usize1</span>;
+
+<span class="kw">fn</span> <span class="ident">main</span>() {
+    <span class="comment">// https://atcoder.jp/contests/abc166/tasks/abc166_b</span>
+
+    <span class="macro">input</span><span class="macro">!</span> {
+        <span class="ident">n</span>: <span class="ident">usize</span>,
+        <span class="comment">//ass: [[{ |n: usize| n - 1 }]],</span>
+        <span class="ident">ass</span>: [[<span class="ident">Usize1</span>]],
+    }
+
+    <span class="kw">let</span> <span class="kw">_</span>: <span class="ident">usize</span> <span class="op">=</span> <span class="ident">n</span>;
+    <span class="kw">let</span> <span class="kw">_</span>: <span class="ident">Vec</span><span class="op">&lt;</span><span class="ident">Vec</span><span class="op">&lt;</span><span class="ident">usize</span><span class="op">&gt;</span><span class="op">&gt;</span> <span class="op">=</span> <span class="ident">ass</span>;
+}</pre></div>
+</div><h2 class="section-header" id="macros"><a href="#macros">Macros</a></h2>
+<table><tbody><tr class="module-item"><td><a class="macro" href="macro.input.html" title="input::input macro">input</a></td><td class="docblock-short"><p>A <code>input!</code> macro.</p>
+</td></tr></tbody></table><h2 class="section-header" id="enums"><a href="#enums">Enums</a></h2>
+<table><tbody><tr class="module-item"><td><a class="enum" href="enum.Bytes.html" title="input::Bytes enum">Bytes</a></td><td class="docblock-short"><p>Reads a string as <code>Vec&lt;u8&gt;</code>.</p>
+</td></tr><tr class="module-item"><td><a class="enum" href="enum.Usize1.html" title="input::Usize1 enum">Usize1</a></td><td class="docblock-short"><p>1-based index.</p>
+</td></tr></tbody></table><h2 class="section-header" id="traits"><a href="#traits">Traits</a></h2>
+<table><tbody><tr class="module-item"><td><a class="trait" href="trait.Readable.html" title="input::Readable trait">Readable</a></td><td class="docblock-short"><p>A trait representing which type can be read.</p>
+</td></tr></tbody></table><h2 class="section-header" id="functions"><a href="#functions">Functions</a></h2>
+<table><tbody><tr class="module-item"><td><a class="fn" href="fn.bytes.html" title="input::bytes fn">bytes</a></td><td class="docblock-short"><span class="stab deprecated" title="">Deprecated</span></td></tr><tr class="module-item"><td><a class="fn" href="fn.usize1.html" title="input::usize1 fn">usize1</a></td><td class="docblock-short"><span class="stab deprecated" title="">Deprecated</span></td></tr></tbody></table></section><section class="content hidden" id="search"></section><section class="footer"></section><div data-current-crate="input" data-root-path="../" data-search-js="../search-index.js" id="rustdoc-vars"></div>
+    <script src="../main.js"></script></body></html>
